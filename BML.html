@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitCheck BMI Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <header>
+        <h1>FitCheck BMI Calculator</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#bmi-chart">BMI Chart</a></li>
+            <li><a href="#bmi-calculator">BMI Calculator</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About the Website</h2>
+        <p>This website helps you calculate your Body Mass Index (BMI) and understand your weight category. It provides a simple interface to input your height and weight, and it displays your BMI along with a message about your health status.</p>
+    </section>
+
+    <section id="bmi-chart">
+        <h2>BMI Chart</h2>
+        <table>
+            <tr>
+                <th>BMI Range</th>
+                <th>Category</th>
+            </tr>
+            <tr><td>Under 18.5</td><td>Underweight</td></tr>
+            <tr><td>18.5 - 24.9</td><td>Normal weight</td></tr>
+            <tr><td>25 - 29.9</td><td>Overweight</td></tr>
+            <tr><td>30 and above</td><td>Obesity</td></tr>
+        </table>
+    </section>
+
+    <section id="bmi-calculator">
+        <h2>BMI Calculator</h2>
+        <form id="calculator-form">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" required>
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+            <button type="submit">Calculate BMI</button>
+        </form>
+        <div id="result"></div>
+    </section>.
+
+    <script src="script.js"></script>
+</body>
+</html>

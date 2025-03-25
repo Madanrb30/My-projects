@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head align="Center" >
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body bgcolor="gray"><font color="yellow">
+    <form align="center">
+        <h1 align="center">Contact Us</h1>
+        <label>Your Name</label><br>
+            <input type="text" placeholder="name" required><br><br>
+            <label>Email</label><br>
+            <input type="email" required><br><br>
+            <label>Phone number</label><br>
+            <input type="tel" required><br><br>
+            <label>How may I help you</label><br>
+            <select>
+                <option>Choose one </option>
+                <option>Reservation</option>
+                <option>Menu</option>
+                <option>Family orders</option>
+            </select><br><br>
+            <label align="right">Message</label><br>
+            <textarea rows="5" columns="300">
+            </textarea><br><br>
+            <input type="checkbox">
+            <label>Join our Mailing list?</label><br>
+            <br>
+            <input type="submit" value="Send Message" >            
+    </form>
+    </font>
+</body>
+</html--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="sample2.css">
+</head>
+<body>
+    <div class="log">
+        <p>Login</p>
+        
+        <br>
+            <input type="text" placeholder="User Name" id="user_name" ><br>
+            <samp id="mistake"></samp><br>
+            <input type="password" placeholder="Password" id="pass" ><br>
+            <samp id="pas"></samp><br>
+             <input type="button" value="Forget password ?"><br>
+            <br><input type="submit" value="Login" onclick="myfuc()"><br>
+            <label class="he">Don't have an account?</label><input type="button" value="Register">
+    
+    </div>
+    <script>
+            
+            function myfuc()
+            {
+                var a=document.getElementById("user_name")
+                var b=document.getElementById("mistake")
+                var c=document.getElementById("pass")
+                var d=document.getElementById("pas")
+                b.style.color="blue"
+                d.style.color="blue"
+                if(a.value=="")
+            {
+                b.textContent="username ah olunga podu moodhevi moodhevi"
+                a.style.borderColor="red"
+            }
+                if(c.value.length<8)
+            {
+                d.textContent="oru password kuda olunga poda therila neelaam waste "
+                c.style.borderColor="red"
+            }
+            } 
+    </script>
+</body>
+</html>
